@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <form id="form2">
+            <input type="button" value="<-" onclick="history.back()">
+            <input type="button" value="->" onclick="history.forward()">
+        </form>
+        <nav>
+            <!-- Secondary Navigation inside <header> -->
+            <ul id="navigation">
+                <a id="buttonnav">MY ACCOUNT</a>
+                <a id="buttonnav">HOME<a>
+                <a id="buttonnav">ON DEMAND<a>
+            </ul>
+        </nav>
+
+
+        <title>TikMovie</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <!--Build a Form is below this line-->
+        <form id="form1"action="/registration" method="POST">
+            <div>
+            <label for="username" id="label1">Username</label>
+            <input type="text" name="username"/>
+            </div>
+            <label for="password" id="label1">Password</label>
+            <input type="password"/>
+            <div>
+            <input type="submit"  class="loginbtn" value="Login"/>
+            </div>
+        </form>
+        <style>
+            form{
+                color: black;
+                background-color:white(247, 240, 240);
+            }
+            a:hover{
+                color: white;
+            }
+        </style>
+         <!--styling of tables is below this line-->
+        <style>
+            table,th,td,img{
+                border: 2px solid white;
+                border-collapse: collapse;
+    
+            }
+            #th1{
+                color: black;
+                background-color: white;
+                border: thin solid;
+            }
+        </style>
+
+        <!--styling of headers is below this line-->
+        <style>
+            h1{
+                color:rgb(255, 217, 0);
+                background-color: rgb(26, 69, 211);
+                text-align: center;
+                margin-top: 4px;
+                margin-bottom: 1px;
+                margin-left: 5px;
+                margin-right: 5px;
+                padding-top:5px;
+                padding-bottom:4px;
+                border-color: black;
+                border-width: 5px;
+                text-shadow: 5px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 1000;
+            }
+            #header2{
+                color:black;
+                background-color: rgb(194, 187, 187);
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                font-family: 'Times New Roman', Times, serif, monospace;
+                font-size: 20px;
+            }
+            #header3{
+                font-family: 'Times New Roman', Times, serif, monospace;
+                font-size: 24px;
+            }
+
+            .breadcrumbs{
+                margin-bottom: 25px;
+                margin-top: 5px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: small;
+                font-weight: bold;
+            }
+            
+        </style>
+
+        <!--all styling is above this line-->
+        <div class="breadcrumbs">
+            <a href="Nearby.html">My Tickets</a>
+            <a href="order.html">On Demand</a>
+            <a href="Nearby.html">Theaters Nearby</a>
+        </div>
+
+
+        <h1>TikMovie &#8482</h1>
+        <h1 id="header4"></h1>
+
+
+        <div id="products">
+            <h2 id="header3">BROS</h2>
+        <img  src="/images/bros.bmp"  height="500" alt="bros">
+        <p id="paragraph1">Bros is a 2022 American romantic comedy film <br>directed by Nicholas Stoller from a screenplay 
+            he <br>co-wrote with Billy Eichner, who also stars and<br> executive produces.</br></p>
+            <div>
+                <p>Rated: R</p>
+            </div>
+        <Table id="table1">
+            <th id="th1">Ticket</th>
+            <th id="th1">Price</th>
+            <input type="submit" class="orderbtn" value="BUY TICKETS" />
+            
+
+            <tr>
+                <td>Child</td>
+                <td>None Available</td>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>$26.00</td>
+            </tr>
+        </Table>
+        </div>
+        <!--next section-->
+        <div id="products">
+        <h2>SLAYERS</h2>
+        <a href="slayers.html">
+        <img src="/images/slayers.bmp" height="500" alt="Slayers">
+        </a>
+        <p id="paragraph1">Vampire slayer Elliot Jones made it his life's mission to take 
+            <br>revenge on the bloodsuckers who killed his teenage daughter. 
+            <br>After years of tracking them, he's finally reached their secret
+            <br>and hidden base.</p>
+            <div>
+                <p>Rated: PG-17</p>
+            </div>
+        <Table>
+            <th id="th1">Ticket</th>
+            <th id="th1">Price</th>
+            <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+            <tr>
+                <td>Child</td>
+                <td>$8.00</td>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>$16.00</td>
+            </tr>
+        </Table>
+        </div>
+        
+    <!--next section-->
+    <div id="products">
+    <h2>SMILE</h2>
+    <img src="/images/smile.bmp"  height="500" alt="Smile">
+    <p id="paragraph1">Dr. Rose Cotter starts experiencing frightening occurrences
+        <br>that she can't explain. As an overwhelming terror begins
+        <br> taking over her life, Rose must confront her troubling 
+        <br>past in order to survive and escape her horrifying new reality.</p>
+        <div>
+            <p>Rated: R</p>
+        </div>
+    <Table>
+        <th id="th1">Ticket</th>
+        <th id="th1">Price</th>
+        <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+        <tr>
+            <td>Child</td>
+            <td>None Available </td>
+        </tr>
+        <tr>
+            <td>Adult</td>
+            <td>$16.00</td>
+        </tr>
+    </Table>
+    </div>
+    <!--next section-->
+    <div id="products">
+        <h2>The School Of <br>Good And Evil</h2>
+        <img src="/images/the school for good and evil.bmp" height="500" alt="The School Of Good And Evil">
+        <p id="paragraph1">Best friends Sophie and Agatha find themselves on 
+            <br>opposing  sides of an epic battle when they're swept  
+            <br>away into an enchanted school where aspiring heroes 
+            <br>and villains are trained to protect the balance between
+            <br> good and evil.</p>
+            <div>
+                <p>Rated: PG-13</p>
+            </div>
+        <Table>
+            <th id="th1">Ticket</th>
+            <th id="th1">Price</th>
+            <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+            <tr>
+                <td>Child</td>
+                <td>$8.00</td>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>$16.00</td>
+            </tr>
+        </Table>
+        </div>
+        <!--next section-->
+    <div id="products">
+        <h2>Don't Worry Darling</h2>
+        <img src="/images/dont worry darling.bmp" height="500" alt="Don't Worry Darling">
+        <p id="paragraph1">In the 1950s, Alice and Jack live in the idealized community
+            <br> of Victory, an experimental company town that houses the men 
+            <br>who work on a top-secret project.</p>
+            <div>
+                <p>Rated: R</p>
+            </div>
+        <Table>
+            <th id="th1">Ticket</th>
+            <th id="th1">Price</th>
+            <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+            <tr>
+                <td>Child</td>
+                <td>None Available</td>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>$16.00</td>
+            </tr>
+        </Table>
+        </div>
+        <div id="products">
+            <h2>Werewolf By Night</h2>
+            <img src="/images/werewolf by night.bmp" width="350" height="500" alt="Werewolf by night">
+            <p id="paragraph1">In the 1950s, Alice and Jack live in the idealized community
+                <br> of Victory, an experimental company town that houses the men 
+                <br>who work on a top-secret project.</p>
+                <div>
+                    <p>Rated: R</p>
+                </div>
+            <Table>
+                <th id="th1">Ticket</th>
+                <th id="th1">Price</th>
+                <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+                <tr>
+                    <td>Child</td>
+                    <td>None Available</td>
+                </tr>
+                <tr>
+                    <td>Adult</td>
+                    <td>$16.00</td>
+                </tr>
+            </Table>
+            </div>
+            <div id="products">
+                <h2>Don't Worry<br>Darling</h2>
+                <img src="/images/dont worry darling.bmp" height="500" alt="Don't Worry Darling">
+                <p id="paragraph1">In the 1950s, Alice and Jack live in the idealized community
+                    <br> of Victory, an experimental company town that houses the men 
+                    <br>who work on a top-secret project.</p>
+                    <div>
+                        <p>Rated: R</p>
+                    </div>
+                <Table>
+                    <th id="th1">Ticket</th>
+                    <th id="th1">Price</th>
+                    <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+                    <tr>
+                        <td>Child</td>
+                        <td>None Available</td>
+                    </tr>
+                    <tr>
+                        <td>Adult</td>
+                        <td>$16.00</td>
+                    </tr>
+                </Table>
+                </div>
+                <div id="products">
+                    <h2>Don't Worry<br>Darling</h2>
+                    <img src="/images/dont worry darling.bmp" height="500" alt="Don't Worry Darling">
+                    <p id="paragraph1">In the 1950s, Alice and Jack live in the idealized community
+                        <br> of Victory, an experimental company town that houses the men 
+                        <br>who work on a top-secret project.</p>
+                        <div>
+                            <p>Rated: R</p>
+                        </div>
+                    <Table>
+                        <th id="th1">Ticket</th>
+                        <th id="th1">Price</th>
+                        <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+                        <tr>
+                            <td>Child</td>
+                            <td>None Available</td>
+                        </tr>
+                        <tr>
+                            <td>Adult</td>
+                            <td>$16.00</td>
+                        </tr>
+                    </Table>
+                    </div>
+                    <div id="products">
+                        <h2>Don't Worry<br>Darling</h2>
+                        <img src="/images/dont worry darling.bmp" height="500" alt="Don't Worry Darling">
+                        <p id="paragraph1">In the 1950s, Alice and Jack live in the idealized community
+                            <br> of Victory, an experimental company town that houses the men 
+                            <br>who work on a top-secret project.</p>
+                            <div>
+                                <p>Rated: R</p>
+                            </div>
+                        <Table>
+                            <th id="th1">Ticket</th>
+                            <th id="th1">Price</th>
+                            <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+                            <tr>
+                                <td>Child</td>
+                                <td>None Available</td>
+                            </tr>
+                            <tr>
+                                <td>Adult</td>
+                                <td>$16.00</td>
+                            </tr>
+                        </Table>
+                        </div>
+                        <div id="products">
+                            <h2>Don't Worry<br>Darling</h2>
+                            <img src="/images/dont worry darling.bmp" height="500" alt="Don't Worry Darling">
+                            <p id="paragraph1">In the 1950s, Alice and Jack live in the idealized community
+                                <br> of Victory, an experimental company town that houses the men 
+                                <br>who work on a top-secret project.</p>
+                                <div>
+                                    <p>Rated: R</p>
+                                </div>
+                            <Table>
+                                <th id="th1">Ticket</th>
+                                <th id="th1">Price</th>
+                                <input type="submit" class="orderbtn" value="BUY TICKETS"/>
+                                <tr>
+                                    <td>Child</td>
+                                    <td>None Available</td>
+                                </tr>
+                                <tr>
+                                    <td>Adult</td>
+                                    <td>$16.00</td>
+                                </tr>
+                            </Table>
+                            </div>
+
+        <footer id="footer">
+            <p>  &#169 2022 A MICHAEL KEES COMPANY </p>
+        </footer>
+        
+        
+    </body>
+</html>
